@@ -1,10 +1,12 @@
 package com.chowdhuryelab.addressbook;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -16,6 +18,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import androidx.annotation.DrawableRes;
 import androidx.appcompat.app.AppCompatActivity;
 
 
@@ -85,10 +88,18 @@ public class insert_data extends AppCompatActivity {
         builder.show();
     }
 
+    private boolean isValidMail(String email) {
+        return android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches();
+    }
+    private boolean isValidMobile(String phone) {
+        return android.util.Patterns.PHONE.matcher(phone).matches();
+    }
+
     public void AddData() {
 
         btnAddData.setOnClickListener(
                 new View.OnClickListener() {
+                    @SuppressLint("UseCompatLoadingForDrawables")
                     @Override
                     public void onClick(View v) {
                         String name = editName.getText().toString();
@@ -105,36 +116,62 @@ public class insert_data extends AppCompatActivity {
                         bitMap.compress(Bitmap.CompressFormat.PNG, 100, img);
                         data = img.toByteArray();
 
-                        if (TextUtils.isEmpty(name)) {
-                            Toast.makeText(insert_data.this, "Plase enter the Name", Toast.LENGTH_LONG).show();
-                            return;
+                        //Check input data validation
+                        String error = "";
+
+                        if(name.length()<2){
+                            editName.setError("Error");
+                            error = error +"\nName";
                         }
-                        if (TextUtils.isEmpty(address)) {
-                            Toast.makeText(insert_data.this, "Plase enter your address", Toast.LENGTH_LONG).show();
-                            return;
+
+                        if(!isValidMobile(phn1) || phn1.length()<11){
+                            editPhn1.setError("Error");
+                            error = error +"\nPhone(Home)";
                         }
-                        if (TextUtils.isEmpty(email)) {
-                            Toast.makeText(insert_data.this, "Plase enter the email", Toast.LENGTH_LONG).show();
-                            return;
+                        if(!phn2.isEmpty()){
+                            if(!isValidMobile(phn2) || phn2.length()<11) {
+                                editPhn2.setError("Error");
+                                error = error + "\nPhone(Office)";
+                            }
                         }
-                        if (TextUtils.isEmpty(phn1)) {
-                            Toast.makeText(insert_data.this, "Plase enter the Contact Number", Toast.LENGTH_LONG).show();
-                            return;
+
+                        if (!isValidMail(email))
+                        {
+                            editemail.setError("email");
+                            error = error +"\nEmail";
                         }
-                        //data =image
-                        boolean isInserted = myDb.insertData(name, phn1, phn2, email, address, data);
-                        if (isInserted == true) {
-                            Toast.makeText(insert_data.this, "Data Inserted", Toast.LENGTH_LONG).show();
-                            finish();
-                            Intent intent = new Intent(insert_data.this, MainActivity.class);
-                            startActivity(intent);
-                            editName.setText("");
-                            editaddree.setText("");
-                            editPhn1.setText("");
-                            editPhn2.setText("");
-                            editemail.setText("");
-                        } else
-                            Toast.makeText(insert_data.this, "Data not Inserted", Toast.LENGTH_LONG).show();
+
+                        if(address.length()<2){
+                            editaddree.setError("Error");
+                            error = error +"\nAddress";
+                        }
+
+
+                        if(error.isEmpty()){
+                            // Insert Data in sqlite using db helper
+                            //data =image
+                            boolean isInserted = myDb.insertData(name, phn1, phn2, email, address, data);
+                            if (isInserted == true) {
+                                Toast.makeText(insert_data.this, "Data Inserted", Toast.LENGTH_LONG).show();
+                                finish();
+                                Intent intent = new Intent(insert_data.this, MainActivity.class);
+                                startActivity(intent);
+                                editName.setText("");
+                                editaddree.setText("");
+                                editPhn1.setText("");
+                                editPhn2.setText("");
+                                editemail.setText("");
+
+                                Intent iy = new Intent(insert_data.this, MainActivity.class);
+                                finish();
+                                startActivity(iy);
+
+                            } else
+                                Toast.makeText(insert_data.this, "Data not Inserted", Toast.LENGTH_SHORT).show();
+                        }else{
+                            Toast.makeText(insert_data.this, "Please check invalid fields", Toast.LENGTH_SHORT).show();
+                        }
+
                     }
                 }
         );

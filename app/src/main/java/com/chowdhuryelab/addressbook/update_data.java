@@ -88,11 +88,55 @@ public class update_data extends AppCompatActivity{
         Update_Data();
     }
 
+    private boolean isValidMail(String email) {
+        return android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches();
+    }
+    private boolean isValidMobile(String phone) {
+        return android.util.Patterns.PHONE.matcher(phone).matches();
+    }
+
+
     public void Update_Data() {
         btnUpdate.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+
+                        String name = editName.getText().toString();
+                        String phn1 = editPhn1.getText().toString();
+                        String phn2 = editPhn2.getText().toString();
+                        String email = editemail.getText().toString();
+                        String address = editaddree.getText().toString();
+
+                        //Check input data validation
+                        String error = "";
+
+                        if(name.length()<2){
+                            editName.setError("Error");
+                            error = error +"\nName";
+                        }
+
+                        if(!isValidMobile(phn1) || phn1.length()<11){
+                            editPhn1.setError("Error");
+                            error = error +"\nPhone(Home)";
+                        }
+                        if(!phn2.isEmpty()){
+                            if(!isValidMobile(phn2) || phn2.length()<11) {
+                                editPhn2.setError("Error");
+                                error = error + "\nPhone(Office)";
+                            }
+                        }
+
+                        if (!isValidMail(email))
+                        {
+                            editemail.setError("email");
+                            error = error +"\nEmail";
+                        }
+
+                        if(address.length()<2){
+                            editaddree.setError("Error");
+                            error = error +"\nAddress";
+                        }
 
                         profileImageView.setDrawingCacheEnabled(true);
                         profileImageView.buildDrawingCache();
@@ -101,28 +145,25 @@ public class update_data extends AppCompatActivity{
                         bitMap.compress(Bitmap.CompressFormat.PNG, 100, img);
                         data = img.toByteArray();
 
-                        String id = ID;
-                        boolean isUpdate = myDb.updateData(id,
-                                editName.getText().toString(),
-                                editPhn1.getText().toString(),
-                                editPhn2.getText().toString(),
-                                editemail.getText().toString(),
-                                editaddree.getText().toString(),
-                                data);
-                        if (isUpdate == true) {
-                            Toast.makeText(update_data.this, "Data Update", Toast.LENGTH_LONG).show();
-                            editName.setText("");
-                            editPhn1.setText("");
-                            editPhn2.setText("");
-                            editemail.setText("");
-                            editaddree.setText("");
+                        if(error.isEmpty()){
+                            String id = ID;
+                            boolean isUpdate = myDb.updateData(id, name, phn1, phn2, email, address, data);
+                            if (isUpdate == true) {
+                                Toast.makeText(update_data.this, "Data Update", Toast.LENGTH_LONG).show();
+                                editName.setText("");
+                                editPhn1.setText("");
+                                editPhn2.setText("");
+                                editemail.setText("");
+                                editaddree.setText("");
 
-                            Intent intent = new Intent(update_data.this, MainActivity.class);
-                            finish();
-                            startActivity(intent);
-                        } else {
-                            Toast.makeText(update_data.this, "Data not Updated", Toast.LENGTH_LONG).show();
-                        }
+                                Intent intent = new Intent(update_data.this, MainActivity.class);
+                                finish();
+                                startActivity(intent);
+                            } else {
+                                Toast.makeText(update_data.this, "Data not Updated", Toast.LENGTH_SHORT).show();
+                            }
+                        }else  Toast.makeText(update_data.this, "Please check invalid fields", Toast.LENGTH_SHORT).show();
+
                     }
                 }
         );
