@@ -21,8 +21,9 @@
             <ImageView
                 android:id="@+id/insert_profileImage"
                 android:layout_width="match_parent"
-                android:layout_height="260dp"
+                android:layout_height="280dp"
                 android:layout_gravity="center"
+                android:scaleType="centerCrop"
                 android:onClick="InsertImageOnClick"
                 android:src="@drawable/cover2"/>
 
@@ -34,7 +35,7 @@
                 android:hint="Name"
                 android:padding="8dp"
                 android:textSize="25dp"
-                android:background="@drawable/main_page_icon"/>
+                android:background="@drawable/etoutline"/>
             <EditText
                 android:id="@+id/editText_phn1"
                 android:layout_width="match_parent"
@@ -42,7 +43,7 @@
                 android:hint="Contact Number"
                 android:inputType="phone"
                 android:layout_margin="5dp"
-                android:background="@drawable/main_page_icon"
+                android:background="@drawable/etoutline"
                 android:padding="8dp"
                 android:textSize="25dp"/>
 
@@ -53,7 +54,7 @@
                 android:hint="Contact Number"
                 android:inputType="phone"
                 android:layout_margin="5dp"
-                android:background="@drawable/main_page_icon"
+                android:background="@drawable/etoutline"
                 android:padding="8dp"
                 android:textSize="25dp"/>
             <EditText
@@ -62,7 +63,7 @@
                 android:layout_height="wrap_content"
                 android:hint="Email ID"
                 android:layout_margin="5dp"
-                android:background="@drawable/main_page_icon"
+                android:background="@drawable/etoutline"
                 android:padding="8dp"
                 android:textSize="25dp"/>
 
@@ -72,7 +73,7 @@
                 android:layout_height="wrap_content"
                 android:hint="Address"
                 android:layout_margin="5dp"
-                android:background="@drawable/main_page_icon"
+                android:background="@drawable/etoutline"
                 android:padding="8dp"
                 android:textSize="25dp"/>
 
@@ -84,7 +85,7 @@
                 android:layout_marginTop="20dp"
                 android:text="Save Profile"
                 android:textSize="20dp"
-                android:backgroundTint="@color/colorGreen_900"/>
+                android:backgroundTint="@color/colorGreen_A400"/>
 
         </LinearLayout>
 
