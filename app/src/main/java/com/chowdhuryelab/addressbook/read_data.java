@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -25,7 +26,7 @@ public class read_data extends AppCompatActivity {
     TextView textView_Name, textView_Address, textView_Email, textView_Phn1,textView_Phn2;
     Bitmap bitmap;
     ImageView profileImageView;
-
+    LinearLayout llphn2;
     String ID;
 
 
@@ -43,6 +44,8 @@ public class read_data extends AppCompatActivity {
         textView_Address = findViewById(R.id.textView_Address);
         textView_Email = findViewById(R.id.textView_Email);
         profileImageView = findViewById(R.id.profileImageView);
+
+        llphn2 = findViewById(R.id.llphn2);
 
         Intent i = getIntent();
         ID = i.getStringExtra("GetID");
@@ -107,10 +110,15 @@ setData();
             System.out.println("No Data Found");
             return;
         }
+
         while (res.moveToNext()) {
             textView_Name.setText(String.format(res.getString(1)));
-            textView_Phn1.setText(String.format(res.getString(2)));
-            textView_Phn2.setText(String.format(res.getString(3)));
+            textView_Phn1.setText(String.format("0"+res.getString(2)));
+
+            if(!(res.getString(3).toString().length() >0))
+                llphn2.setVisibility(View.GONE);
+            else textView_Phn2.setText(String.format("0"+res.getString(3)));
+
             textView_Email.setText(String.format(res.getString(4)));
             textView_Address.setText(String.format(res.getString(5)));
 

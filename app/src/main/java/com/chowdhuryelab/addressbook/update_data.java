@@ -73,8 +73,12 @@ public class update_data extends AppCompatActivity{
         Cursor res = myDb.readData(ID);
         while (res.moveToNext()) {
             editName.setText(res.getString(1));
-            editPhn1.setText(res.getString(2));
-            editPhn2.setText(res.getString(3));
+            editPhn1.setText("0"+res.getString(2));
+
+            if(!(res.getString(3).toString().length() >0))
+                editPhn2.setText(res.getString(3));
+            else editPhn2.setText(String.format("0"+res.getString(3)));
+
             editemail.setText(res.getString(4));
             editaddree.setText(res.getString(5));
             byte[] img = res.getBlob(6);
@@ -163,7 +167,7 @@ public class update_data extends AppCompatActivity{
                                 Toast.makeText(update_data.this, "Data not Updated", Toast.LENGTH_SHORT).show();
                             }
                         }else  Toast.makeText(update_data.this, "Please check invalid fields", Toast.LENGTH_SHORT).show();
-
+                        
                     }
                 }
         );

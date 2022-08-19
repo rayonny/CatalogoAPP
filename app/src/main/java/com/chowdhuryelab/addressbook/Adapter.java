@@ -5,9 +5,11 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
@@ -28,13 +30,18 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
         public TextView name;
         public TextView phn1;
+        public View btnCall, btnSMS;
         CircleImageView profileImageView;
+
         public ViewHolder(View itemView) {
             super(itemView);
 
             name = itemView.findViewById(R.id.textView_rName);
             phn1 = itemView.findViewById(R.id.textView_rPhn);
             profileImageView = itemView.findViewById(R.id.rprofileImageView);
+
+            btnCall = itemView.findViewById(R.id.btnCall);
+            btnSMS = itemView.findViewById(R.id.btnSMS);
 
             itemView.setOnClickListener(this);
         }
@@ -77,9 +84,29 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
 
             holder.name.setText(String.format(name));
-            holder.phn1.setText(String.format(phn1));
+            holder.phn1.setText(String.format("0"+phn1));
             holder.profileImageView.setImageBitmap(Bitmap.createScaledBitmap(bitmap, bitmap.getWidth(), bitmap.getHeight(), false));
             holder.itemView.setTag(id);
+
+            holder.btnCall.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    Intent intent = new Intent(Intent.ACTION_DIAL);
+                    intent.setData(Uri.parse("tel:"+ "0"+phn1));
+                    mContext.startActivity(intent);
+                }
+            });
+
+        holder.btnSMS.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(Intent.ACTION_SENDTO);
+                intent.setData(Uri.parse("smsto:" +  "0"+phn1));
+                mContext.startActivity(intent);
+            }
+        });
 
 
     }
