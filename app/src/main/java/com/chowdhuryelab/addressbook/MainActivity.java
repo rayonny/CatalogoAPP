@@ -3,6 +3,7 @@ package com.chowdhuryelab.addressbook;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
@@ -16,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     DatabaseHelper myDb;
     SQLiteDatabase mDatabase;
    ExtendedFloatingActionButton extendedFAB;
+   SwipeRefreshLayout swipeRefreshLayout;
     //Button extendedFAB;
 
     Adapter adapter;
@@ -26,12 +28,21 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         myDb = new DatabaseHelper(this);
         extendedFAB = findViewById(R.id.extFab);
+        swipeRefreshLayout = findViewById(R.id.swiperefresh);
 
         RecyclerView recyclerView = findViewById(R.id.recyclerview);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         adapter = new Adapter(this, myDb.getAllData());
         adapter.swapCursor(myDb.getAllData());
         recyclerView.setAdapter(adapter);
+
+        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                adapter.notifyDataSetChanged();
+                swipeRefreshLayout.setRefreshing(false);
+            }
+        });
 
 
 
