@@ -1,10 +1,13 @@
 package com.chowdhuryelab.addressbook;
 
+import android.Manifest;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
+import android.content.ContentValues;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -20,7 +23,11 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 
 import java.io.ByteArrayOutputStream;
@@ -37,17 +44,26 @@ public class update_data extends AppCompatActivity{
     int progressBarStatus = 0;
     Handler progressBarbHandler = new Handler();
     boolean hasImageChanged = false;
-    Bitmap thumbnail;
-   ImageView profileImageView;
-    byte[] data;
 
+   ImageView profileImageView;
+
+    byte[] data;
+    Uri image_uri;
     static final int CAMERA_CODE = 1;
     static final int GALLERY_CODE = 0;
 
     final int bmpHeight = 160;
     final int bmpWidth = 160;
 
-    private CharSequence[] Items = {"Camera", "Gallery", "Remove"};
+    private static final int CAMERA_REQUEST_CODE =200;
+    private static final int STORAGE_REQUEST_CODE =300;
+    private static final int IMAGE_PICK_GALLERY_CODE =400;
+    private static final int IMAGE_PICK_CAMERA_CODE =500;
+
+
+    private String[] cameraPermission;
+    private String[] storagePermission;
+
 
     String ID;
     @Override
@@ -65,6 +81,10 @@ public class update_data extends AppCompatActivity{
 
 
         profileImageView = findViewById(R.id.profileImageView);
+
+        //Read permission from manifest
+        cameraPermission = new String[]{Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE};
+        storagePermission = new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE};
 
         Intent i = getIntent();
         ID = i.getStringExtra("GetID");
@@ -175,53 +195,121 @@ public class update_data extends AppCompatActivity{
 
 
     public void ImageOnClick(View v) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(update_data.this);
-        builder.setTitle("Select Any Option_");
-        builder.setItems(Items, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                if (Items[which].equals("Camera")){
-                    Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                    startActivityForResult(intent, CAMERA_CODE);
-                }else if (Items[which].equals("Gallery")){
-                    Log.i("GalleryCode",""+GALLERY_CODE);
-                    Intent GalleryIntent = null;
-                    GalleryIntent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-                    GalleryIntent.setType("image/*");
-                    GalleryIntent.setAction(Intent.ACTION_GET_CONTENT);
-                    startActivityForResult(GalleryIntent,GALLERY_CODE);
-                }
-                else{
-                    profileImageView.setImageResource(R.drawable.cover1);
-                }
-            }
-        });
-        builder.show();
+        String[] options = {"Camera", "Gallery", "remove"};
+
+        androidx.appcompat.app.AlertDialog.Builder builder = new androidx.appcompat.app.AlertDialog.Builder(this);
+        builder.setTitle("pick Image")
+                .setItems(options, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        if (which==0){
+                            if (checkCameraPermission()){
+                                pickFromCamera();
+                            }
+                            else {
+                                requestCameraPermission();
+                            }
+                        }
+                        else if(which==1){
+                            if (checkStoragePermission()){
+                                pickFromGalery();
+                            }
+                            else {
+                                requestStoragePermission();
+                            }
+                        }
+                        else {
+                            profileImageView.setImageResource(R.drawable.cover1);
+                        }
+                    }
+                }).show();
+    }
+
+    private void pickFromGalery(){
+        Intent intent = new Intent(Intent.ACTION_PICK);
+        intent.setType("image/*");
+        startActivityForResult(intent, IMAGE_PICK_GALLERY_CODE);
+    }
+
+    private void pickFromCamera(){
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(MediaStore.Images.Media.TITLE, "Image_Title");
+        contentValues.put(MediaStore.Images.Media.DESCRIPTION, "Image_Description");
+
+        image_uri = getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, contentValues);
+        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        intent.putExtra(MediaStore.EXTRA_OUTPUT, image_uri);
+        startActivityForResult(intent, IMAGE_PICK_CAMERA_CODE);
     }
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (resultCode == Activity.RESULT_OK){
-            switch(requestCode){
-                case 1:
-                    Log.i("CameraCode",""+CAMERA_CODE);
-                    Bundle bundle = data.getExtras();
-                    Bitmap bmp = (Bitmap) bundle.get("data");
-                    //Bitmap resized = Bitmap.createScaledBitmap(bmp, bmpWidth,bmpHeight, true);
-                    //userPhoto.setImageBitmap(resized);
-                    profileImageView.setImageBitmap(bmp);
-
-                case 0:
-                    Log.i("GalleryCode",""+requestCode);
-                    Uri ImageURI = data.getData();
-                    profileImageView.setImageURI(ImageURI);
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        if (resultCode == RESULT_OK){
+            if (requestCode == IMAGE_PICK_GALLERY_CODE){
+                image_uri = data.getData();
+                profileImageView.setImageURI(image_uri);
             }
-
-
+            else if(requestCode == IMAGE_PICK_CAMERA_CODE){
+                profileImageView.setImageURI(image_uri);
+            }
         }
+        super.onActivityResult(requestCode, resultCode, data);
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        switch (requestCode){
+            case CAMERA_REQUEST_CODE:{
+                if (grantResults.length > 0) {
+                    boolean cameraAccepted = grantResults[0] == PackageManager.PERMISSION_GRANTED;
+                    boolean storageAccepted = grantResults[1] == PackageManager.PERMISSION_GRANTED;
+                    if (cameraAccepted && storageAccepted) {
+                        pickFromCamera();
+                    } else {
+                        Toast.makeText(this, "Not Working", Toast.LENGTH_SHORT).show();
+                    }
+                }
+            }
+            break;
+
+            case STORAGE_REQUEST_CODE:{
+                if (grantResults.length > 0) {
+                    boolean storageAccepted = grantResults[0] == PackageManager.PERMISSION_GRANTED;
+                    if (storageAccepted) {
+                        pickFromGalery();
+                    } else {
+                        Toast.makeText(this, "Not Working", Toast.LENGTH_SHORT).show();
+                    }
+                }
+            }
+            break;
+        }
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
     }
 
 
+    private boolean checkStoragePermission(){
+        boolean result = ContextCompat.checkSelfPermission(this,
+                Manifest.permission.WRITE_EXTERNAL_STORAGE) == (PackageManager.PERMISSION_GRANTED);
+        return result;
+    }
+
+    private void requestStoragePermission(){
+        ActivityCompat.requestPermissions(this, storagePermission, STORAGE_REQUEST_CODE);
+    }
+
+    private boolean checkCameraPermission(){
+        boolean result = ContextCompat.checkSelfPermission(this,
+                Manifest.permission.CAMERA) ==
+                (PackageManager.PERMISSION_GRANTED);
+        boolean result1 = ContextCompat.checkSelfPermission(this,
+                Manifest.permission.WRITE_EXTERNAL_STORAGE) ==
+                (PackageManager.PERMISSION_GRANTED);
+        return result && result1;
+    }
+
+    private void requestCameraPermission(){
+        ActivityCompat.requestPermissions(this, cameraPermission, CAMERA_REQUEST_CODE);
+    }
 }
 
