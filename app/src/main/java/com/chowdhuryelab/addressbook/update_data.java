@@ -17,6 +17,7 @@ import android.os.Handler;
 import android.provider.MediaStore;
 import android.text.TextUtils;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -180,9 +181,10 @@ public class update_data extends AppCompatActivity{
                                 editemail.setText("");
                                 editaddree.setText("");
 
-                                Intent intent = new Intent(update_data.this, MainActivity.class);
+//                                Intent intent = new Intent(update_data.this, read_data.class);
+//                                intent.putExtra("GetID",ID);
+//                                startActivity(intent);
                                 finish();
-                                startActivity(intent);
                             } else {
                                 Toast.makeText(update_data.this, "Data not Updated", Toast.LENGTH_SHORT).show();
                             }
@@ -311,5 +313,30 @@ public class update_data extends AppCompatActivity{
     private void requestCameraPermission(){
         ActivityCompat.requestPermissions(this, cameraPermission, CAMERA_REQUEST_CODE);
     }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        Update_Data();
+        System.out.println("@update_data.onResume");
+
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        Update_Data();
+        System.out.println("@update_data.onPause");
+    }
+
+    @Override
+    public void onRestart() {
+        super.onRestart();
+        Update_Data();
+        System.out.println("@update_data.onRestart");
+
+    }
+
+
 }
 

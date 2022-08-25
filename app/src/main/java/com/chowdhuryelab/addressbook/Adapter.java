@@ -54,7 +54,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
                 Intent i = new Intent(mContext, read_data.class);
                 i.putExtra("GetID", String.valueOf(view.getTag()));
                 mContext.startActivity(i);
-
+                //((MainActivity)mContext).finish();
                 System.out.println("Item clicked: "+view.getTag());
             }
 

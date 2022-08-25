@@ -159,5 +159,32 @@ setData();
         startActivity(intent);
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        setData();
+        System.out.println("@read_data.onResume");
+
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        setData();
+        System.out.println("@read_data.onPause");
+    }
+
+    @Override
+    public void onRestart() {
+        super.onRestart();
+        setData();
+        System.out.println("@read_data.onRestart");
+
+    }
+
+    @Override
+    public void onBackPressed() {
+        finish();
+    }
 
 }

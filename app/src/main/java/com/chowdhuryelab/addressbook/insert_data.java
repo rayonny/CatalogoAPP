@@ -174,17 +174,13 @@ public class insert_data extends AppCompatActivity {
                             if (isInserted == true) {
                                 Toast.makeText(insert_data.this, "Data Inserted", Toast.LENGTH_LONG).show();
                                 finish();
-                                Intent intent = new Intent(insert_data.this, MainActivity.class);
-                                startActivity(intent);
+//                                Intent intent = new Intent(insert_data.this, MainActivity.class);
+//                                startActivity(intent);
                                 editName.setText("");
                                 editaddree.setText("");
                                 editPhn1.setText("");
                                 editPhn2.setText("");
                                 editemail.setText("");
-
-                                Intent iy = new Intent(insert_data.this, MainActivity.class);
-                                finish();
-                                startActivity(iy);
 
                             } else
                                 Toast.makeText(insert_data.this, "Data not Inserted", Toast.LENGTH_SHORT).show();
@@ -285,6 +281,5 @@ public class insert_data extends AppCompatActivity {
     private void requestCameraPermission(){
         ActivityCompat.requestPermissions(this, cameraPermission, CAMERA_REQUEST_CODE);
     }
-
 
 }
