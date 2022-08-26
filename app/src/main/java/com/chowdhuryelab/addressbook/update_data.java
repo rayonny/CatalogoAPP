@@ -317,7 +317,6 @@ public class update_data extends AppCompatActivity{
     @Override
     public void onResume() {
         super.onResume();
-        Update_Data();
         System.out.println("@update_data.onResume");
 
     }
@@ -325,14 +324,12 @@ public class update_data extends AppCompatActivity{
     @Override
     public void onPause() {
         super.onPause();
-        Update_Data();
         System.out.println("@update_data.onPause");
     }
 
     @Override
     public void onRestart() {
         super.onRestart();
-        Update_Data();
         System.out.println("@update_data.onRestart");
 
     }
