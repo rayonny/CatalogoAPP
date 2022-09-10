@@ -117,7 +117,10 @@ setData();
 
             if(!(res.getString(3).toString().length() >0))
                 llphn2.setVisibility(View.GONE);
-            else textView_Phn2.setText(String.format("0"+res.getString(3)));
+            else{
+                llphn2.setVisibility(View.VISIBLE);
+                textView_Phn2.setText(String.format("0"+res.getString(3)));
+            }
 
             textView_Email.setText(String.format(res.getString(4)));
             textView_Address.setText(String.format(res.getString(5)));
