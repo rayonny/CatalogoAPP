@@ -73,6 +73,7 @@ layout conatct_lstview
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
+string cover2
 string waiting
 style AppTheme
 style Base.AppTheme

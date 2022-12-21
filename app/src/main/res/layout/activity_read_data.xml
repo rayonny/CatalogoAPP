@@ -46,7 +46,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                    android:layout_margin="10dp"
-                    android:text="Chowdhury"
+                    android:text="Perfil"
                     android:textColor="@color/black"
                     android:textSize="25sp"
                     android:textStyle="bold" />
@@ -74,13 +74,13 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Personal"
+                            android:text="Pessoal"
                             android:textSize="20sp"/>
                         <TextView
                             android:id="@+id/textView_phn1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Invalid"
+                            android:text="Inválido"
                             android:textStyle="bold"
                             android:textSize="20sp"
                             android:paddingTop="10dp"
@@ -120,13 +120,13 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Office"
+                            android:text="Escritório"
                             android:textSize="20sp"/>
                         <TextView
                             android:id="@+id/textView_phn2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Invalid"
+                            android:text="Inválido"
                             android:textStyle="bold"
                             android:textSize="20sp"
                             android:paddingTop="10dp"
@@ -188,7 +188,7 @@
                             android:layout_height="wrap_content"
                             android:onClick="SenMail"
                             android:paddingLeft="20dp"
-                            android:text="c.dipu0@gmail.com"/>
+                            android:text="ceub0@gmail.com"/>
                     </LinearLayout>
 
 
@@ -209,7 +209,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:paddingLeft="20dp"
-                            android:text="Dhonia, Dhaka-1204"/>
+                            android:text="Coentro, Taguatinga-1to4"/>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -226,7 +226,7 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Update"
+                android:text="Atualizar"
                 android:layout_margin="5dp"
                 android:id="@+id/button_Update"/>
 
@@ -234,7 +234,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:text="Delete"
+                android:text="Deletar"
                 android:id="@+id/button_delete"
                 />
 

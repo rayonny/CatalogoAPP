@@ -1,158 +1,162 @@
 [
     {
-        "merged": "com.chowdhuryelab.addressbook.app-merged_res-31:/drawable_gradient_8.xml.flat",
-        "source": "com.chowdhuryelab.addressbook.app-main-33:/drawable/gradient_8.xml"
+        "merged": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-merged_res-31:\\layout_activity_update_data.xml.flat",
+        "source": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-main-33:\\layout\\activity_update_data.xml"
     },
     {
-        "merged": "com.chowdhuryelab.addressbook.app-merged_res-31:/drawable_gradient_1.xml.flat",
-        "source": "com.chowdhuryelab.addressbook.app-main-33:/drawable/gradient_1.xml"
+        "merged": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-merged_res-31:\\drawable_gradient_7.xml.flat",
+        "source": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-main-33:\\drawable\\gradient_7.xml"
     },
     {
-        "merged": "com.chowdhuryelab.addressbook.app-merged_res-31:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "com.chowdhuryelab.addressbook.app-pngs-26:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-merged_res-31:\\layout_conatct_lstview.xml.flat",
+        "source": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-main-33:\\layout\\conatct_lstview.xml"
     },
     {
-        "merged": "com.chowdhuryelab.addressbook.app-merged_res-31:/layout_activity_main.xml.flat",
-        "source": "com.chowdhuryelab.addressbook.app-main-33:/layout/activity_main.xml"
+        "merged": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-merged_res-31:\\drawable_gradient_5.xml.flat",
+        "source": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-main-33:\\drawable\\gradient_5.xml"
     },
     {
-        "merged": "com.chowdhuryelab.addressbook.app-merged_res-31:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.chowdhuryelab.addressbook.app-main-33:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-merged_res-31:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-pngs-26:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.chowdhuryelab.addressbook.app-merged_res-31:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.chowdhuryelab.addressbook.app-main-33:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-merged_res-31:\\drawable_cover2.jpg.flat",
+        "source": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-main-33:\\drawable\\cover2.jpg"
     },
     {
-        "merged": "com.chowdhuryelab.addressbook.app-merged_res-31:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.chowdhuryelab.addressbook.app-main-33:/mipmap-xhdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "com.chowdhuryelab.addressbook.app-merged_res-31:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.chowdhuryelab.addressbook.app-main-33:/mipmap-hdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "com.chowdhuryelab.addressbook.app-merged_res-31:/layout_activity_update_data.xml.flat",
-        "source": "com.chowdhuryelab.addressbook.app-main-33:/layout/activity_update_data.xml"
-    },
-    {
-        "merged": "com.chowdhuryelab.addressbook.app-merged_res-31:/drawable_gradient_6.xml.flat",
-        "source": "com.chowdhuryelab.addressbook.app-main-33:/drawable/gradient_6.xml"
-    },
-    {
-        "merged": "com.chowdhuryelab.addressbook.app-merged_res-31:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.chowdhuryelab.addressbook.app-main-33:/mipmap-hdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "com.chowdhuryelab.addressbook.app-merged_res-31:/drawable_etoutline2.xml.flat",
-        "source": "com.chowdhuryelab.addressbook.app-main-33:/drawable/etoutline2.xml"
-    },
-    {
-        "merged": "com.chowdhuryelab.addressbook.app-merged_res-31:/layout_activity_insert_data.xml.flat",
-        "source": "com.chowdhuryelab.addressbook.app-main-33:/layout/activity_insert_data.xml"
+        "merged": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-merged_res-31:\\drawable_telephone_call.png.flat",
+        "source": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-main-33:\\drawable\\telephone_call.png"
     },
     {
         "merged": "com.chowdhuryelab.addressbook.app-merged_res-31:/layout_conatct_lstview.xml.flat",
         "source": "com.chowdhuryelab.addressbook.app-main-33:/layout/conatct_lstview.xml"
     },
     {
-        "merged": "com.chowdhuryelab.addressbook.app-merged_res-31:/drawable_gradient_4.xml.flat",
-        "source": "com.chowdhuryelab.addressbook.app-main-33:/drawable/gradient_4.xml"
+        "merged": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-merged_res-31:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-main-33:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "com.chowdhuryelab.addressbook.app-merged_res-31:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.chowdhuryelab.addressbook.app-main-33:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-merged_res-31:\\drawable_gradient_2.xml.flat",
+        "source": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-main-33:\\drawable\\gradient_2.xml"
     },
     {
-        "merged": "com.chowdhuryelab.addressbook.app-merged_res-31:/drawable_gmail.png.flat",
-        "source": "com.chowdhuryelab.addressbook.app-main-33:/drawable/gmail.png"
+        "merged": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-merged_res-31:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-main-33:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "com.chowdhuryelab.addressbook.app-merged_res-31:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.chowdhuryelab.addressbook.app-main-33:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-merged_res-31:\\drawable_gradient_4.xml.flat",
+        "source": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-main-33:\\drawable\\gradient_4.xml"
     },
     {
-        "merged": "com.chowdhuryelab.addressbook.app-merged_res-31:/drawable_address.png.flat",
-        "source": "com.chowdhuryelab.addressbook.app-main-33:/drawable/address.png"
+        "merged": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-merged_res-31:\\layout_activity_read_data.xml.flat",
+        "source": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-main-33:\\layout\\activity_read_data.xml"
     },
     {
-        "merged": "com.chowdhuryelab.addressbook.app-merged_res-31:/layout_activity_read_data.xml.flat",
-        "source": "com.chowdhuryelab.addressbook.app-main-33:/layout/activity_read_data.xml"
+        "merged": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-merged_res-31:\\drawable_gradient_9.xml.flat",
+        "source": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-main-33:\\drawable\\gradient_9.xml"
     },
     {
-        "merged": "com.chowdhuryelab.addressbook.app-merged_res-31:/xml_backup_rules.xml.flat",
-        "source": "com.chowdhuryelab.addressbook.app-main-33:/xml/backup_rules.xml"
+        "merged": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-merged_res-31:\\layout_activity_insert_data.xml.flat",
+        "source": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-main-33:\\layout\\activity_insert_data.xml"
     },
     {
-        "merged": "com.chowdhuryelab.addressbook.app-merged_res-31:/drawable_gradient_2.xml.flat",
-        "source": "com.chowdhuryelab.addressbook.app-main-33:/drawable/gradient_2.xml"
+        "merged": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-merged_res-31:\\drawable-v24_etoutline.xml.flat",
+        "source": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-main-33:\\drawable-v24\\etoutline.xml"
     },
     {
-        "merged": "com.chowdhuryelab.addressbook.app-merged_res-31:/drawable_phone_book_icon.png.flat",
-        "source": "com.chowdhuryelab.addressbook.app-main-33:/drawable/phone_book_icon.png"
+        "merged": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-merged_res-31:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-main-33:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "com.chowdhuryelab.addressbook.app-merged_res-31:/drawable_cover2.jpg.flat",
-        "source": "com.chowdhuryelab.addressbook.app-main-33:/drawable/cover2.jpg"
+        "merged": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-merged_res-31:\\drawable_gmail.png.flat",
+        "source": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-main-33:\\drawable\\gmail.png"
     },
     {
-        "merged": "com.chowdhuryelab.addressbook.app-merged_res-31:/xml_data_extraction_rules.xml.flat",
-        "source": "com.chowdhuryelab.addressbook.app-main-33:/xml/data_extraction_rules.xml"
+        "merged": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-merged_res-31:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-main-33:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.chowdhuryelab.addressbook.app-merged_res-31:/drawable_gradient_9.xml.flat",
-        "source": "com.chowdhuryelab.addressbook.app-main-33:/drawable/gradient_9.xml"
+        "merged": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-merged_res-31:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-main-33:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.chowdhuryelab.addressbook.app-merged_res-31:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.chowdhuryelab.addressbook.app-main-33:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-merged_res-31:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-main-33:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.chowdhuryelab.addressbook.app-merged_res-31:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.chowdhuryelab.addressbook.app-main-33:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-merged_res-31:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-main-33:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.chowdhuryelab.addressbook.app-merged_res-31:/drawable_gradient_7.xml.flat",
-        "source": "com.chowdhuryelab.addressbook.app-main-33:/drawable/gradient_7.xml"
+        "merged": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-merged_res-31:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-main-33:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.chowdhuryelab.addressbook.app-merged_res-31:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.chowdhuryelab.addressbook.app-main-33:/drawable/ic_launcher_background.xml"
+        "merged": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-merged_res-31:\\drawable_phone_book_icon.png.flat",
+        "source": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-main-33:\\drawable\\phone_book_icon.png"
     },
     {
-        "merged": "com.chowdhuryelab.addressbook.app-merged_res-31:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.chowdhuryelab.addressbook.app-main-33:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-merged_res-31:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-main-33:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.chowdhuryelab.addressbook.app-merged_res-31:/drawable_gradient_5.xml.flat",
-        "source": "com.chowdhuryelab.addressbook.app-main-33:/drawable/gradient_5.xml"
+        "merged": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-merged_res-31:\\drawable_cover1.jpg.flat",
+        "source": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-main-33:\\drawable\\cover1.jpg"
     },
     {
-        "merged": "com.chowdhuryelab.addressbook.app-merged_res-31:/drawable_telephone_call.png.flat",
-        "source": "com.chowdhuryelab.addressbook.app-main-33:/drawable/telephone_call.png"
+        "merged": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-merged_res-31:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-main-33:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.chowdhuryelab.addressbook.app-merged_res-31:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.chowdhuryelab.addressbook.app-main-33:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-merged_res-31:\\drawable_gradient_1.xml.flat",
+        "source": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-main-33:\\drawable\\gradient_1.xml"
     },
     {
-        "merged": "com.chowdhuryelab.addressbook.app-merged_res-31:/drawable_cover1.jpg.flat",
-        "source": "com.chowdhuryelab.addressbook.app-main-33:/drawable/cover1.jpg"
+        "merged": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-merged_res-31:\\drawable_etoutline2.xml.flat",
+        "source": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-main-33:\\drawable\\etoutline2.xml"
     },
     {
-        "merged": "com.chowdhuryelab.addressbook.app-merged_res-31:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.chowdhuryelab.addressbook.app-main-33:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-merged_res-31:\\drawable_gradient_6.xml.flat",
+        "source": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-main-33:\\drawable\\gradient_6.xml"
     },
     {
-        "merged": "com.chowdhuryelab.addressbook.app-merged_res-31:/drawable_chat.png.flat",
-        "source": "com.chowdhuryelab.addressbook.app-main-33:/drawable/chat.png"
+        "merged": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-merged_res-31:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-main-33:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.chowdhuryelab.addressbook.app-merged_res-31:/drawable-v24_etoutline.xml.flat",
-        "source": "com.chowdhuryelab.addressbook.app-main-33:/drawable-v24/etoutline.xml"
+        "merged": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-merged_res-31:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-main-33:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.chowdhuryelab.addressbook.app-merged_res-31:/drawable_gradient_3.xml.flat",
-        "source": "com.chowdhuryelab.addressbook.app-main-33:/drawable/gradient_3.xml"
+        "merged": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-merged_res-31:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-main-33:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-merged_res-31:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-main-33:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-merged_res-31:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-main-33:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-merged_res-31:\\drawable_address.png.flat",
+        "source": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-main-33:\\drawable\\address.png"
+    },
+    {
+        "merged": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-merged_res-31:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-main-33:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-merged_res-31:\\drawable_gradient_8.xml.flat",
+        "source": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-main-33:\\drawable\\gradient_8.xml"
+    },
+    {
+        "merged": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-merged_res-31:\\drawable_gradient_3.xml.flat",
+        "source": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-main-33:\\drawable\\gradient_3.xml"
+    },
+    {
+        "merged": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-merged_res-31:\\drawable_chat.png.flat",
+        "source": "C:\\Users\\rayon\\Documents\\Address-Book-SQLite-Android-Java-Application\\.gradle\\6.5\\daemon\\7.3.3\\com.chowdhuryelab.addressbook.app-main-33:\\drawable\\chat.png"
     }
 ]

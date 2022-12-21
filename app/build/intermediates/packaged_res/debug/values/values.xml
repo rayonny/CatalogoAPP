@@ -19,7 +19,8 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
-    <string name="app_name">Address Book</string>
+    <string name="app_name">Catálogo de endereços</string>
+    <string name="cover2">Imagem de capa do perfil do usuário</string>
     <string name="waiting">Please wait...</string>
     <style name="AppTheme" parent="Base.AppTheme">
 

@@ -1,38 +1,16 @@
+Kaio Rodrigues Silva de Souza
+RA:72250446
 
-## Address-Book
+Matheus Cerqueira de Araujo
+RA:72301781
 
-A single page android java application that uses SQLite to store data and image of user. CRUD(Create, Read, Update and Delete) implementation of sqlite
+Marcus Vinnícius de Araújo Nascimento
+RA:72301373
 
-
-## Features
-
-- Can take image from Gallery or Camera
-- Can detele, update and edit
-- Shows invalid fiels if any
-
-## Icon
-<img src="ScreenShot/phone_book_icon.png" width="200"/>
-
-<!--
-## Demo
-
-![Demo](ScreenShot/) -->
+Weslley Francisco de Oliveira 
+RA:72300376
 
 
-<!-- ## Task Given
-<img src="ScreenShot/quiz task.png" width="700"/> -->
+O LINK DO VIDEO DEMOSTRANDO AS FUNCIONALIDADES DO APLICATIVO (https://youtu.be/sJkK1dOJrRc?feature=shared)
 
 
-## Screenshots
-
-Screenshot#1               |  Screenshot#2
-:-------------------------:|:-------------------------:
-![](ScreenShot/1.png)  |  ![](ScreenShot/2.png)
-
-
-
-## 🔗 Links
-[![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/c.dipu0/)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/md-asad-chowdhury-dipu/)
-[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/dipu093)
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/c.dipu0/)

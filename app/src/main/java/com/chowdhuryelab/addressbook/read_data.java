@@ -67,24 +67,24 @@ public class read_data extends AppCompatActivity {
 
                         if (!isFinishing()) {
                             new AlertDialog.Builder(read_data.this)
-                                    .setTitle("Delete")
-                                    .setMessage("Do you want to delete the record")
+                                    .setTitle("Deletar")
+                                    .setMessage("Você deseja excluir o registro")
                                     .setCancelable(true)
-                                    .setPositiveButton("Delete", new DialogInterface.OnClickListener() {
+                                    .setPositiveButton("Deletar", new DialogInterface.OnClickListener() {
                                         @Override
                                         public void onClick(DialogInterface dialog, int which) {
 
                                            int rows = myDb.deleteData(ID);
                                             if(rows >0){
-                                                Toast.makeText(read_data.this,"Date Deleted",Toast.LENGTH_LONG).show();
+                                                Toast.makeText(read_data.this,"Data excluída\"",Toast.LENGTH_LONG).show();
                                             }
-                                            else Toast.makeText(read_data.this,"Date not Deleted",Toast.LENGTH_LONG).show();
+                                            else Toast.makeText(read_data.this,"Data não excluída",Toast.LENGTH_LONG).show();
                                             Intent myintent = new Intent(read_data.this, MainActivity.class);
                                             finish();
                                             startActivity(myintent);
                                         }
                                     })
-                                    .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                                    .setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
                                         @Override
                                         public void onClick(DialogInterface dialog, int which) {
                                             dialog.cancel();
